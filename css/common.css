@@ -1,20 +1,59 @@
 /* COMMON */
-.body_container {
-  
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+/* 페이지 레이아웃 */
+.cpage{
+	clear:both;position:relative;overflow:visible;
+	width:100%;height:auto;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
 }
-
-.wrap {
-  width: 1050px;
-  background: orange;
-  height: 200px;
-  margin: 0 auto;
+/* 페이지 */
+.paging_ver{
+	font-size:0;
 }
-.clear::after {
-  content: "";
-  clear: both;
-  display: block;
-} 
+.paging_ver a{
+	display:inline-block;
+	width:18px;height:18px;
+	margin:0 5px;
+	border:1px solid #fff;
+}
+.paging_ver .sel{
+	background:#fff;
+}
+/* 큰화살표 */
+.arrowBL,
+.arrowBR{
+	display:block;position:absolute;top:0;bottom:0;margin:auto 0;
+	width:90px;height:129px;
+	background:url(../images/arrowB.png) no-repeat;
+}
+.arrowBL{left:60px; background-position:0 0;}
+.arrowBR{right:60px; background-position:-194px 0;}
+.arrowBL:hover{background-position:0 -200px;}
+.arrowBR:hover{background-position:-194px -200px;}
 
-a {
-  text-decoration-line: none;
+/* 작은화살표 */
+.arrowML,
+.arrowMR{
+	display:block;position:absolute;top:0;bottom:0;margin:auto 0;
+	width:43px;height:81px;
+	background:url(../images/arrowM.png) no-repeat;
+}
+.arrowML{left:60px; background-position:0 0;}
+.arrowMR{right:60px; background-position:-200px 0;}
+.arrowML:hover{background-position:0 -200px;}
+.arrowMR:hover{background-position:-200px -200px;}
+/* 네모버튼 */
+.boxBtn{
+	display:inline-block;
+	min-width:140px;line-height:35px;
+	padding:0 10px;
+	font-size:12px;color:#868686;text-align:center;
+	background:#fff;border:1px solid #c6c6c6;
+	transition:background-color 0.3s, color 0.3s;
+}
+.boxBtn:hover{
+	color:#fff;
+	background:#000;
 }

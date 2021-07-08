@@ -1,68 +1,172 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <title>그랜드오션</title>
+  <title>디캠클</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> 
+  
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/main.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
   <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Song+Myung&family=Yeon+Sung&display=swap" rel="stylesheet">
+
+  <script type="text/javascript" src="./jscript/plugin/jquery-1.10.2.min.js"></script>
+  
 </head>
 <body>
-  <div class="body_container">
+  
+<div class="all_wrap">
+	<div class="cpage" id="cp1">
+		<div class="control" style="height: 880px;">
+			<img src="./img/main/cp1slogan.png" class="slogan TRAN" style="transform: translateX(120px);">			
+			<a class="arrowBL" onclick="sliderObj.btnScroll('U')"></a>
+			<a class="arrowBR" onclick="sliderObj.btnScroll('D')"></a>
+			<div class="down">
+				<img src="./img/main/scrollMark.png">
+				<div class="paging_ver">
+					<a onclick="sliderObj.btnScroll(0)" class=""></a><a onclick="sliderObj.btnScroll(1)" class=""></a><a onclick="sliderObj.btnScroll(2)" class=""></a><a onclick="sliderObj.btnScroll(3)" class=""></a><a onclick="sliderObj.btnScroll(4)" class=""></a><a onclick="sliderObj.btnScroll(5)" class=""></a><a onclick="sliderObj.btnScroll(6)" class=""></a><a onclick="sliderObj.btnScroll(7)" class=""></a><a onclick="sliderObj.btnScroll(8)" class="sel"></a><a onclick="sliderObj.btnScroll(9)" class=""></a><a onclick="sliderObj.btnScroll(10)" class=""></a><a onclick="sliderObj.btnScroll(11)" class=""></a><a onclick="sliderObj.btnScroll(12)" class=""></a><a onclick="sliderObj.btnScroll(13)" class=""></a></div>
+				<img src="./img/main/cp1down.png">
+			</div>
+		</div>
+		<ul id="photoSlider" class="fadeSlider">			
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/1.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/2.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/3.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/4.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/5.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/6.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/7.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/8.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/9.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/10.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/11.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/12.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/13.jpg);"></div></li>
+			<li style="display: none; opacity: 1;" class=""><div class="loader" style="background-image:url(./img/main/14.jpg);"></div></li>
+		</ul>
+	</div>
+	<!-- cp2_1 -->
+	<div class="cpage">
+		<div class="loader"><img src="./img/main/cp2_1.jpg" style="width:100%;"></div>
+	</div>
+	<!-- cp2 -->
+	<div class="cpage" id="cp2">
+		<!-- 180802 동영상추가 -->
+		<div class="line">
+			<div class="content" style="background:#e5e5e5;">
+				<img src="./img/main/cpMslogan.png" alt="">
+			</div>
+			<div class="movieWrap">
+				<iframe id="playerDiv1" src=" https://www.youtube.com/embed/B4QgXpysrrE?feature=player_detailpage;wmode=transparent;amp;autoplay=1;rel=0;loop=10;showinfo=0;start=0;autohide=1;enablejsapi=1;Description=1;controls=0;vq=highres" type="text/html" frameborder="0" width="100%" height="100%" allow="autoplay"></iframe>
+			</div>
+		</div>
+		<div class="line">
+			<div class="content linkLine">
+				<img src="./img/main/cp2L1slogan.png">
+				<br><br>
+				<a href="room.php?menutree_idx=15380" class="room_btn" num="3">│ 풀빌라_03 Room view</a>
+				<a href="room.php?menutree_idx=15382" class="room_btn" num="5">│ 풀빌라_05 Room view</a>
+				<a href="room.php?menutree_idx=24869" class="room_btn" num="15">│ 풀빌라_15 Room view</a>				
+				<a href="room.php?menutree_idx=20052" class="room_btn" num="7">│ 풀빌라_07 Room view</a>
+				<a href="room.php?menutree_idx=20053" class="room_btn" num="8">│ 풀빌라_08 Room view</a>
+				<a href="room.php?menutree_idx=20054" class="room_btn" num="9">│ 풀빌라_09 Room view</a>
+				<a href="room.php?menutree_idx=20055" class="room_btn" num="10">│ 풀빌라_10 Room view</a>
+				<a href="room.php?menutree_idx=20056" class="room_btn" num="11">│ 풀빌라_11 Room view</a>
+				<a href="room.php?menutree_idx=20057" class="room_btn" num="12">│ 풀빌라_12 Room view</a>
+				<a href="room.php?menutree_idx=18925" class="room_btn" num="13">│ 풀빌라_13 Room view</a>
+				<a href="room.php?menutree_idx=17190" class="room_btn" num="14">│ 풀빌라_14 Room view</a>
+				<a href="room.php?menutree_idx=15378" class="room_btn" num="1">│ SPA_01 Room view</a>
+				<a href="room.php?menutree_idx=15379" class="room_btn" num="2">│ SPA_02 Room view</a>				
+				<a href="room.php?menutree_idx=15381" class="room_btn" num="4">│ SPA_04 Room view</a>				
+				<a href="room.php?menutree_idx=15383" class="room_btn" num="6">│ SPA_06 Room view</a>				
+				<a href="room.php?menutree_idx=29304" class="room_btn" num="16">│ Family_16 Room view</a>
+			</div>
+			<div class="gray" style="background-image:url(./img/main/cp2L1gray.jpg);">
+				<dl class="tableCss">
+					<dt>
+Detour'는 잠시 돌아가는 길, 우회로를 뜻하고 있습니다. 
+<br>바쁜 일상에 지친 현대인의 심신을 달래는 휴식의 공간이 되고자 하는 마음으로 디투어스로 이름을 지었습니다.
+<br>
+<br>고객님들의 소중한 휴식과 편의를 위해 최선을 다하겠습니다. 디투어스에서 일상을 이겨낼 힘을 얻어 가시길 바랍니다.
+					</dt>
+				</dl>
+			</div>
+			<div class="cell" style="background-image:url(./img/main/cp2L1img1.jpg);" id="cp2room3"><div class="loader"></div></div>
+			<div class="cell" style="background-image:url(./img/main/cp2L1img2.jpg);" id="cp2room1"><div class="loader"></div></div>
+			<div class="cell" style="background-image:url(./img/main/cp2L1img3.jpg);" id="cp2room2"><div class="loader"></div></div>
+			<div class="cell" style="background-image:url(./img/main/cp2L1img4.jpg);" id="cp2room4"><div class="loader"></div></div>
+		</div>
+		<!-- line2 -->
+		<div class="line">
+			<div class="content" style="background:#e5e5e5;">
+				<img src="./img/main/cp2L2slogan.png">
+			</div>
+			<div class="gray" style="background-image:url(./img/main/cp2L2gray.jpg);">
+				<dl class="tableCss">
+					<dt>
+정처없이 여행을 해 보라. 늘 아는 길만 다니는 것은 안전하기는 해도 지루하다. 모르는 길을 헤매면서 새로운 것을 많이 배운다. - 박광철 [부끄러운 A학점보다 정직한 B학점이 낫다]
+					</dt>
+				</dl>
+			</div>
+			<div class="cell"><div class="loader" style="background-image:url(./img/main/cp2L2img1.jpg);width:200%;"></div></div>
+			<div class="cell"></div>
+			<div class="cell"><div class="loader" style="background-image:url(./img/main/cp2L2img2.jpg);width:200%"></div></div>
+			<div class="cell"></div>
+		</div>
+		<!-- line3 -->
+		<div class="line">
+			<div class="content">
+				<img src="./img/main/cp2L3slogan.png">
+			</div>
+			<div class="gray" style="background-image:url(./img/main/cp2L3gray.jpg);">
+				<dl class="tableCss">
+					<dt>
+찬란한 햇살과 은은한 달빛아래에서 사랑하는 사람들과 행복한 힐링타임을 갖고, 밤에는 서로 둘러앉아 인생을 이야기하면서 행복한 시간을 보내며 쉼 없이 달려온 일상에서 벗어나 아늑하고 편안한 휴식과 깊은 감동을 느끼는 안식을 디투어스에서 누리시길 바랍니다. 
+					</dt>
+				</dl>
+			</div>
+			<div class="cell"><div class="loader" style="background-image:url(./img/main/cp2L3img1.jpg);height:200%;"></div></div>
+			<div class="cell"><div class="loader" style="background-image:url(./img/main/cp2L3img2.jpg);height:200%;"></div></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+		<!-- line4 -->
+		<div class="line">
+			<div class="content" style="position:relative;background:#e5e5e5;">
+				<img src="./img/main/cp2L4slogan.png">
+				<img src="./img/main/cp2L4sloganDeco.png" class="Halign" style="bottom:45px;">
+			</div>
+			<div class="gray" style="background-image:url(./img/main/cp2L4gray.jpg);"></div>
+			<div class="cell"><div class="loader" style="background-image:url(./img/main/cp2L4img1.jpg);width:200%;height:200%;"></div></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+			<div class="cell"></div>
+		</div>
+	</div>
+	
+	
 
-    <!-- HEADER -->
-    <header>
-      <div class="wrap">
-        <ul class="main-menu">
-          <li class="roomlist"><a href="roomlist.html">룸리스트</a></li>
-          <li class="community"><a href="community.html">커뮤니티</a></li>
-        </ul>
-      </div>
-      <ul class="sub-menu">
-        <li class="reserve">예약<a href="reserve.html"></a></li>
-        <li class="login">로그인<a href=""></a></li>
-      </ul>
-    </header>
-
-
-
-    <!-- MAIN_PAGE -->
-    <section class="main_container clear">
-      <article class="main_section">
-       
-        <div class="abc">
-          <h1>
-            <span class="article_title">메인페이지</span>
-          </h1>
-          <p id="dynamic" class="lg-text">
-            
-          </p>
-          <p class="sm-text">sub</p>
-        </div>
-        <script src="js/index.js">
-        </script>
-
-        </article>
-      
-      <article class="placeRoomlist">
-        <h1>룸리스트 공간</h1>
-      </article>
-    
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      
-      <div class="wrap">풋터</div>
-   
-      </footer>
-
-  </div> <!--body_container끝 -->
+	<!-- cp3 -->
+	<div class="cpage" id="cp3">
+		<div class="txtWrap">
+			디투어스 캠프 클럽은 언제나 고객님을 
+			<br>위해 최선을 다하겠습니다.
+			<p>
+				Tel : 010-8933-7434 <!-- 관리자연락처 010-8933-7434 -->
+				<br>Email : cienacon@naver.com			</p>
+			<a class="boxBtn" href="comm.html?gubun=r&amp;subBtnIdx=1">예약하기</a>
+			<br><img src="./img/main/cp3deco.png" style="margin:68px 0 0 57px;">
+		</div>
+		<img src="./img/main/cp3bg.jpg">
+	</div>
+</div>
+  
 </body>
 </html>

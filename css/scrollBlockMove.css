@@ -1,0 +1,180 @@
+/* made by KimEunJi in INET*/
+/* 위아래 
+.scrollRemoveDown{
+	position:absolute;z-index:3;
+	width:100%;top:0;height:100%;
+	transform-stylepreserve-3d;
+	transform-origin: 50% 0%;
+	animation: scrollRemoveDown 0.7s linear 0s 1 alternate forwards;
+}
+@keyframes scrollRemoveDown{
+	0%	{transform:perspective(1000px) rotateX(0deg)	;z-index:1;}                    
+	15%	{transform:perspective(1000px) rotateX(-10deg)	;}                              
+	80% {transform:perspective(1000px) rotateX(0deg) translateZ(-300px);}               
+	100%{transform:perspective(1000px) translateZ(-300px) translatey(-10%);z-index:1;}  
+}
+
+.scrollMoveDown{
+	position:absolute;z-index:2;
+	width:100%;top:0;height:100%;
+	transform-stylepreserve-3d;
+	transform-origin: 50% 50%;
+	animation: scrollMoveDown 0.7s linear 0s 1 alternate both;
+}
+@keyframes scrollMoveDown{
+	0%	{top:100%}                    
+	100%{top:0%}                              
+}
+
+
+
+
+
+
+
+.scrollRemoveUp{
+	position:absolute;z-index:3;
+	width:100%;top:0;height:100%;
+	transform-stylepreserve-3d;
+	transform-origin: 50% 100%;
+	animation: scrollRemoveUp 0.7s linear 0s 1 alternate forwards;
+}
+@keyframes scrollRemoveUp{
+	0%	{transform:perspective(1000px) rotateX(0deg)	;z-index:1;}                          
+	15%	{transform:perspective(1000px) rotateX(10deg)	;}                                    
+	80%	{transform:perspective(1000px) rotateX(0deg) translateZ(-300px);}                     
+	100%{transform:perspective(1000px) translateZ(-300px) translatey(10%);z-index:1;}         
+}
+
+.scrollMoveUp{
+	position:absolute;z-index:2;
+	width:100%;top:0;height:100%;
+	transform-stylepreserve-3d;
+	transform-origin: 50% 50%;
+	animation: scrollMoveUp 0.7s linear 0s 1 alternate both;
+}
+@keyframes scrollMoveUp{
+	0%	{top:-100%}                    
+	100%{top:0%}                              
+}
+
+*/
+
+
+/* 페이드 
+.scrollMoveNo{
+	position:absolute;z-index:2;
+	width:100%;top:0;height:100%;
+	transform-stylepreserve-3d;
+	transform-origin: 50% 50%;
+	animation: scrollMoveNo 0.7s linear 0s 1 alternate both;
+}
+@keyframes scrollMoveNo{
+	0%	{opacity:0;}
+	100%{opacity:1;}
+}
+
+
+/* 좌우 */
+.scrollRemoveDown{
+	position:absolute;z-index:3;
+	width:100%;top:0;height:100%;
+	transform-stylepreserve-3d;
+	transform-origin: 50% 50%;
+	animation: scrollRemoveDown 0.7s linear 0s 1 alternate forwards;
+}
+@keyframes scrollRemoveDown{
+	0%	{margin-left:0;transform:perspective(1000px) translateZ(0px);}
+	15%	{margin-left:0;transform:perspective(1000px) translateZ(-0px);}
+	80%{margin-left:-100%;transform:perspective(1000px) translateZ(-0px);}
+	100%{margin-left:-100%;transform:perspective(1000px) translateZ(-0px);}
+}
+
+.scrollMoveDown{
+	position:absolute;z-index:2;
+	width:100%;top:0;height:100%;
+	transform-stylepreserve-3d;
+	transform-origin: 50% 50%;
+	animation: scrollMoveDown 0.7s linear 0s 1 alternate both;
+}
+@keyframes scrollMoveDown{
+	0%	{margin-left:100%;transform:perspective(1000px) translateZ(200px);}
+	15%	{margin-left:100%;transform:perspective(1000px) translateZ(200px);}
+	80%	{margin-left:0%;transform:perspective(1000px) translateZ(-0px);}
+	100%{margin-left:0%;transform:perspective(1000px) translateZ(0px);}
+}
+
+
+
+
+
+
+.scrollRemoveUp{
+	position:absolute;z-index:3;
+	width:100%;top:0;height:100%;
+	transform-stylepreserve-3d;
+	transform-origin: 50% 50%;
+	animation: scrollRemoveUp 0.7s linear 0s 1 alternate forwards;
+}
+@keyframes scrollRemoveUp{
+	0%	{margin-left:0;transform:perspective(1000px) translateZ(0px);}
+	15%	{margin-left:0;transform:perspective(1000px) translateZ(-0px);}
+	80%{margin-left:100%;transform:perspective(1000px) translateZ(-0px);}
+	100%{margin-left:100%;transform:perspective(1000px) translateZ(-0px);}
+}
+
+.scrollMoveUp{
+	position:absolute;z-index:2;
+	width:100%;top:0;height:100%;
+	transform-stylepreserve-3d;
+	transform-origin: 50% 50%;
+	animation: scrollMoveUp 0.7s linear 0s 1 alternate both;
+}
+@keyframes scrollMoveUp{
+	0%	{margin-left:-100%;transform:perspective(1000px) translateZ(200px);}
+	15%	{margin-left:-100%;transform:perspective(1000px) translateZ(200px);}
+	80%	{margin-left:0%;transform:perspective(1000px) translateZ(-0px);}
+	100%{margin-left:0%;transform:perspective(1000px) translateZ(0px);}
+}
+
+
+
+
+
+
+/* photoMotion 관련 */
+.scrollRemoveNo{
+	position:absolute;z-index:2;
+	width:100%;top:0;height:100%;
+}
+.scrollMoveNo{
+	position:absolute;z-index:3;
+	width:100%;top:0;height:100%;
+}
+.photoMC{
+	position:relative;overflow:hidden;
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:0px;
+	background-position:center;
+}
+.photoMC li{
+	position:relative;display:inline-block;
+    float:left;overflow:hidden;
+	background-image:inherit;
+	background-position:inherit;
+	background-size:cover;
+	transition:all 0.7s;
+	transition-property:transform, opacity;
+}
+.photoMC .MOVE{
+	transform:translateX(0px) translateY(0px) scale(1) rotate(0) !important;
+	opacity: 1.0 !important;
+}
+.photoMC li p{
+	display:inline-block;
+	position:absolute;left:0;top:0;
+	background-image:inherit;
+	background-position:inherit;
+	background-size:inherit;
+}

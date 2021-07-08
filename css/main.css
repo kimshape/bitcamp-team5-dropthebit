@@ -1,0 +1,180 @@
+.navi_top{
+	position:fixed;z-index:100;top:0;
+	width:100%;height:100px;line-height:100px;
+	font-size:0;
+	background:rgba(0,0,0,0.4);
+}
+.menu_area{
+	text-align:center;
+}
+.menu_area li{
+	position:relative;vertical-align:middle;
+	display:inline-block;*display:inline;_display:inline;
+}
+.menu_area .bigMenu{
+	display:block;
+	padding:0 20px;
+	font-size:14px;color:#d7d7d7;
+	font-family: 'Noto Sans','Nanum Gothic', serif !important;
+}
+.menu_area li:hover .bigMenu{
+	color:#ffffff;
+}
+.menu_area .sub{
+	visibility:hidden;opacity:0;
+	display:table;table-layout:fixed;
+	position:absolute;left:50%;transform:translate(-50%);-ms-transform:translate(-50%);-webkit-transform:translate(-50%);
+	
+	top:100%;
+	padding:10px 50px;
+	font-size:13px;color:#d7d7d7;line-height:0px;
+	background:rgba(0,0,0,0.4) url(./img/main/subNaviOver.png) no-repeat center top;
+	transition:opacity 0.3s ease-out, visibility 0.3s ease-out, line-height 0.3s ease-out;
+}
+.menu_area li:hover .sub{
+	visibility:visible;opacity:1;
+	line-height:30px;
+}
+.menu_area .sub dl{display:table-row;}
+.menu_area .sub dt{display:table-cell;}
+.menu_area .sub dt a{
+	white-space:nowrap;word-break:break-all;
+	display:inline-block;
+}
+.menu_area .sub dt a:hover{color:#fff;}
+/* 우측버튼 */
+.navi_top .logo{margin-right:30px;}
+.navi_top .rightBtns{margin-left:30px;}
+.navi_top .rightBtns a{
+	display:inline-block;vertical-align:middle;
+	width:50px;height:50px;margin:0 10px;
+	background-repeat:no-repeat;
+}
+.navi_top .rightBtns .Btnhover:hover{background-position-y:-100px}
+/* 풀페이지 버튼 */
+.navi_top .fullscreen_btn{
+	background:url(./img/main/fullBtn_set.png) no-repeat center top;
+}
+.navi_top .fullscreen_btn.FULL{background-image:url(./img/main/fullBtn_exit.png);}
+
+    
+/*200916 - 인스타&blog 버튼 추가    */
+    .head-btn{width:50px; height:50px; }
+    .head-btn.type-insta{background:url('./img/main/comm/insta-icon.png')no-repeat center center/50px 50px;}
+    .head-btn.type-blog{background:url('./img/main/comm/blog-icon.png')no-repeat center center/50px 50px}
+
+#cp1{
+	overflow:hidden;
+	padding-top:56.25%;
+}
+#cp1 .fadeSlider{
+	position:absolute;top:0;left:0;
+	width:100%;height:100%;
+}
+#cp1 .slogan{
+	position:absolute;z-index:1;
+	bottom:200px;right:0;
+	max-width:50%;
+}
+#cp1 .control{
+	position:absolute;z-index:20;
+	left:0;top:0;
+	max-height:100%;width:100%;
+}
+#cp1 .down{
+	position:absolute;z-index:2;
+	bottom:50px;
+	width:100%;
+	text-align:center;
+}
+#cp1 .paging_ver{
+	padding-top:15px;padding-bottom:20px;
+}
+/***********************/
+#cp2 .line{
+	clear:both;
+	height:750px;
+}
+#cp2 .line .content{
+	float:left;width:25%;height:100%;
+	padding:1.5% 2.5% 0 2.5%;
+}
+#cp2 .line .content img{
+	max-width:100%;
+}
+#cp2 .line .gray{
+	float:left;width:25%;height:100%;
+	font-size:13px;line-height:18px;color:#ebeaea;
+	background-position:center;background-size:cover;
+}
+#cp2 .line .gray dt{
+	text-align:left;
+	padding:0 10%;
+}
+#cp2 .line .cell{
+	float:left;width:25%;height:50%;
+	background-position:center;background-size:cover;
+}
+#cp2 .linkLine a{
+	display:block;
+	font-size:13px;line-height:28px;color:#a7a8a8;
+	font-family: 'Noto Sans','Nanum Gothic', serif !important;
+	border-top:1px solid #d8d8d8;
+}
+#cp2 .linkLine a:hover{
+	color:#1d1d1d;
+}
+#cp2 .linkLine a:last-child{
+	border-bottom:1px solid #d8d8d8;
+}
+/* 180802 동영상추가 */
+#cp2 .line .movieWrap {
+	float: left;
+	width: 75%; height: 100%;
+	background-image: url(../img/main/cpMbg.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+}
+#cp2 .line .movieWrap iframe {
+	width: 92%; height: 100%;
+	margin: auto;
+}
+/*********************************/
+#cp3{
+	width:1000px;margin:auto;
+	padding:50px 0;
+	font-size:0;text-align:right;
+}
+#cp3 .txtWrap{
+	display:block;float:left;
+	font-size:14px;line-height:18px;color:#666666;text-align:left;
+}
+#cp3 .txtWrap p{
+	padding:15px 0;
+	color:#999999
+}
+
+.footer{
+	clear:both;
+	background:#fff;
+}
+.footer .maxW{
+	margin:auto;
+	width:1000px;
+	padding:50px 0;
+	border-top:1px solid #dfdede;
+	font-size:0;
+}
+.footer .txtWrap{
+	float: right;
+	display:inline-block;vertical-align:top;
+	width:750px;
+	font-size:13px;line-height:20px;color:#9f9e9e;
+}
+.footer .decoTxt{
+	font-size:16px;line-height:24px;color:#878686;font-weight:bold;
+}
+.footer .topBtn{
+	display:none;
+}
