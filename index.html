@@ -13,44 +13,74 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"> 
   
   <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/index.css">
+ 
   <link rel="stylesheet" href="css/default.css">
-  <!-- <link rel="stylesheet" href="css/main.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/slide.css">
+ 
+<link rel="stylesheet" href="css/fullpage.min.css">
+<script src="js/fullpage.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Song+Myung&family=Yeon+Sung&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
   
   <script type="text/javascript" src="./jscript/plugin/jquery-1.10.2.min.js"></script>
  
 </head>
 <body>
   
-
-	<div class="container">
-		<ul class="slider-container" id="slider">
-				<li class="slide">
-					<img src="./img/main/1.jpg">
-				</li>
-				<li class="slide">
-					<img src="./img/main/2.jpg">
-				</li>
-				<li class="slide">
-					<img src="./img/main/3.jpg">
-				</li>
-		</ul>
-	</div>
-	
-		<button class="btn-1">1</button>
-		<button class="btn-2">2</button>
-		<button class="btn-3">3</button>
-		<script src="js/slide.js"></script>
+<div id="full-page">
+	<div class="section s0">
+	  <!-- Swiper -->
+	  <div class="swiper-container mySwiper">
 		
+		<div class="txt-box-wrap has_textshadow2">
+			<p id="dynamic" class="lg-text"></p>
+		  </div>
+		  <script src="js/typing.js"></script>
+		<div class="swiper-wrapper">
+		  
+		  <div class="swiper-slide">
+			  <img src="./img/main/7.jpg" alt="">
+		  </div>
+		  <div class="swiper-slide">
+			  <img src="./img/main/9.jpg" alt="">
+		  </div>
+		  <div class="swiper-slide">
+			  <img src="./img/main/3.jpg" alt="">
+		  </div>
+		  <div class="swiper-slide">
+			  <img src="./img/main/14.jpg" alt="">
+		  </div>
+		  <div class="swiper-slide">
+			  <img src="./img/main/5.jpg" alt="">
+		  </div>
+		  <div class="swiper-slide">
+			  <img src="./img/main/6.jpg" alt="">
+		  </div>
+		</div>
+	   
+		<div class="swiper-button-next"></div>
+	   
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-pagination"></div>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+		
+		<script src="js/swipe.js"></script>
+	  </div>
+	</div>
 	<!-- cp2_1 -->
+	<div class="section s1">
 	<div class="cpage">
 		<div class="loader"><img src="./img/main/cp2_1.jpg" style="width:100%;"></div>
 	</div>
+</div>
+
+<div class="section s2">
 	<!-- cp2 -->
 	<div class="cpage" id="cp2">
 		<!-- 180802 동영상추가 -->
@@ -98,6 +128,9 @@ Detour'는 잠시 돌아가는 길, 우회로를 뜻하고 있습니다.
 			<div class="cell" style="background-image:url(./img/main/cp2L1img3.jpg);" id="cp2room2"><div class="loader"></div></div>
 			<div class="cell" style="background-image:url(./img/main/cp2L1img4.jpg);" id="cp2room4"><div class="loader"></div></div>
 		</div>
+	</div>
+
+	<div class="section s3">
 		<!-- line2 -->
 		<div class="line">
 			<div class="content" style="background:#e5e5e5;">
@@ -115,6 +148,9 @@ Detour'는 잠시 돌아가는 길, 우회로를 뜻하고 있습니다.
 			<div class="cell"><div class="loader" style="background-image:url(./img/main/cp2L2img2.jpg);width:200%"></div></div>
 			<div class="cell"></div>
 		</div>
+	</div>
+
+	<div class="section s4">
 		<!-- line3 -->
 		<div class="line">
 			<div class="content">
@@ -132,6 +168,9 @@ Detour'는 잠시 돌아가는 길, 우회로를 뜻하고 있습니다.
 			<div class="cell"></div>
 			<div class="cell"></div>
 		</div>
+	</div>
+
+	<div class="section s5">
 		<!-- line4 -->
 		<div class="line">
 			<div class="content" style="position:relative;background:#e5e5e5;">
@@ -145,132 +184,12 @@ Detour'는 잠시 돌아가는 길, 우회로를 뜻하고 있습니다.
 			<div class="cell"></div>
 		</div>
 	</div>
-	
-	
-
-	<!-- cp3 -->
-	<div class="cpage" id="cp3">
-		<div class="txtWrap">
-			디투어스 캠프 클럽은 언제나 고객님을 
-			<br>위해 최선을 다하겠습니다.
-			<p>
-				Tel : 010-8933-7434 <!-- 관리자연락처 010-8933-7434 -->
-				<br>Email : cienacon@naver.com			</p>
-			<a class="boxBtn" href="comm.html?gubun=r&amp;subBtnIdx=1">예약하기</a>
-			<br><img src="./img/main/cp3deco.png" style="margin:68px 0 0 57px;">
-		</div>
-		<img src="./img/main/cp3bg.jpg">
-	</div>
 </div>
-  <script>
-	  
-$(window).resize(function(){
-	$("#cp1 .control").height($(window).height())
-}).resize()
-//슬라이더
-var sliderObj; var sliderObj_Timer;
-sliderObj = $.scrollBlockMove('#photoSlider li',{
-	before:function(idx,delta){
-		$(".paging_ver .sel").removeClass("sel")
-		$(".paging_ver a:eq("+idx+")").addClass("sel")
+</div>
 
-		
-		$("#cp1").removeClass("ANI").eq(idx)
-            .stop().clearQueue().delay(300).queue(function(){$(this).addClass('ANI')});
+<script>
+	new fullpage('#full-page',{});
+</script>
 
-		clearTimeout(sliderObj_Timer); 
-		sliderObj_Timer = null;
-		sliderObj_Timer = setTimeout("sliderObj.btnScroll('D')",5000);
-	},complete:function(all,goPage){
-		for(var i = 1;i<=all;i++){
-			$("<a onclick='sliderObj.btnScroll("+(i-1)+")'></a>").appendTo($("#cp1 .paging_ver"))
-		}
-		$("#cp1 .paging_ver a:first").addClass("sel")
-	},scrollBlock:true
-});
-/*****************************************/
-//cp2 룸오버효과
-$("#cp2 .room_btn").mouseover(function(){
-	var idx = $(this).attr("num");
-	$("div#cp2room1 .loader").css({"background-image":"url(./images/main/cp2over/"+idx+"_1.jpg)","opacity":"0"}).stop().fadeTo(700,1,function(){
-		$(this).parent().css({"background-image":$(this).css("background-image")});
-	});
-	$("div#cp2room2 .loader").css({"background-image":"url(./images/main/cp2over/"+idx+"_2.jpg)","opacity":"0"}).stop().fadeTo(700,1,function(){
-		$(this).parent().css({"background-image":$(this).css("background-image")});
-	});
-	$("div#cp2room3 .loader").css({"background-image":"url(./images/main/cp2over/"+idx+"_3.jpg)","opacity":"0"}).stop().fadeTo(700,1,function(){
-		$(this).parent().css({"background-image":$(this).css("background-image")});
-	});
-	$("div#cp2room4 .loader").css({"background-image":"url(./images/main/cp2over/"+idx+"_4.jpg)","opacity":"0"}).stop().fadeTo(700,1,function(){
-		$(this).parent().css({"background-image":$(this).css("background-image")});
-	});
-})
-$("div .linkLine").mouseout(function(){
-	$("div#cp2room1 .loader").css({"background-image":"url(./images/main/cp2L1img2.jpg)","opacity":"0"}).stop().fadeTo(700,1,function(){
-		$(this).parent().css({"background-image":$(this).css("background-image")});
-	});
-	$("div#cp2room2 .loader").css({"background-image":"url(./images/main/cp2L1img3.jpg)","opacity":"0"}).stop().fadeTo(700,1,function(){
-		$(this).parent().css({"background-image":$(this).css("background-image")});
-	});
-})
-/*****************************************/
-//여행지 만들기
-	var travelInfo = $.parseJSON(get_ajax('./exe/travel.html'));
-	var i = 0;var html="";var zoroIdx;
-	for(i = 1;i<=travelInfo.all;i++){
-		zoroIdx = ("00"+i).split('')
-		zoroIdx =  zoroIdx[zoroIdx.length-2]+zoroIdx[zoroIdx.length-1]
-		html+='\
-			<li num ="'+i+'">\
-				<div class="loader" style="background-image:url(./images/travel/'+i+'/1.jpg);"></div>\
-				<div class="content">\
-					<h6>Travel '+zoroIdx+'</h6>\
-					<h5>'+travelInfo["title"+(i-1)]+'</h5>\
-					<div class="getData">'+travelInfo["content"+(i-1)]+'</div>\
-				</div>\
-			</li>\
-		';
-	}
-	$("#travel ul").append(html)
-	$("#travel ul").append(html)
-	
-	function travelMoveFn(idx){
-		var setInfinity = function(num){
-			var lan = num%(travelInfo.all*100);
-			if(lan==0){
-				lan = travelInfo.all*-100
-			}else if(lan>=-100){
-				lan = travelInfo.all*-100-100
-			}
-			$("#travel ul li:first").css({"margin-left":lan+"%"})
-		}
-		var now = slider_fn("#travel ul",idx,{after:setInfinity})
-		if(now == false) return;
-		now = (now-1)%(travelInfo.all)+1;
-		$("#travel ul .SEL").removeClass('SEL')
-		$("#travel ul li[num = '"+(now)+"']").addClass('SEL')
-	}
-	travelMoveFn(1)
-/*****************************************/
-//객실 만들기
-	var roomInfo = $.parseJSON(get_ajax('./exe/room.html'));
-	var i = 0;var html="";var zoroIdx;
-	for(i = 1;i<=roomInfo.all;i++){
-		zoroIdx = ("00"+i).split('')
-		zoroIdx =  zoroIdx[zoroIdx.length-2]+zoroIdx[zoroIdx.length-1]
-		html+='\
-			<a href="room.php?menutree_idx='+roomInfo["idx"+(i-1)]+'">\
-				<div class="paper">\
-					<div class="loader" style="background-image:url(./images/rooms/img'+i+'.jpg);"></div>\
-					<h6>'+roomInfo["title"+(i-1)]+'</h6>\
-					'+roomInfo["class"+(i-1)]+'\
-				</div>\
-			</a>\
-		';
-	}
-	$("#rooms .wrapMax").append(html)
-
-
-  </script>
 </body>
 </html>

@@ -25,9 +25,9 @@ if(randomArr.length>0){
     target.textContent += randomArr.shift();
     setTimeout(function(){
         dynamic(randomArr);
-    },50);
+    },200);
 }else{
-    setTimeout(resetTyping,500);
+    setTimeout(resetTyping,700);
 }
 }
 
@@ -41,4 +41,4 @@ dynamic(randomString())
 function blink(){
     target.classList.toggle("active");
 }
-setInterval(blink, 500);
+setInterval(blink, 700);
